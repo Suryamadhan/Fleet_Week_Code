@@ -38,22 +38,7 @@ public class Autonomous
 		{
 			cross();
 		}
-		else if(priorityForSwitch != 0)
-		{
-			if(gameData.charAt(0) == 'R')
-			{
-				rightSide2Cube();
-			}
-			else if(gameData.charAt(0) == 'L')
-			{
-				leftSide2Cube();
-			}
-			else
-			{
-				cross();
-			}
-		}
-		else if(priorityForSwitch == 0)
+		else
 		{
 			if(gameData.charAt(1) == 'R' && gameData.charAt(0) == 'L')
 			{
@@ -75,10 +60,6 @@ public class Autonomous
 			{
 				cross();
 			}
-		}
-		else
-		{
-			cross();
 		}
 	}
 	
